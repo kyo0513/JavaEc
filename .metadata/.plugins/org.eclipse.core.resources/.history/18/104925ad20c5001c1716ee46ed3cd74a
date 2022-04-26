@@ -1,0 +1,14 @@
+import java.util.LinkedHashSet;
+import java.util.Map;
+
+public class Sample {
+	public static void main(String[] args) {
+		System.out.println("Hello");
+		System.out.println("world");
+
+		Map<String, Integer> prefs = new LinkedHashSet<String, Integer>();
+		prefs.put("東京",1000);
+		System.out.println(prefs);
+
+	}
+}

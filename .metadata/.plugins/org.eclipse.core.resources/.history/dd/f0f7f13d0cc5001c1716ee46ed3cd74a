@@ -1,0 +1,9 @@
+
+public class HeroApp {
+	public static void main(String[] args) {
+		Hero h = new Hero();
+		h.setName("テスト");
+		h.setHp(100);
+		System.out.println(h);
+	}
+}
