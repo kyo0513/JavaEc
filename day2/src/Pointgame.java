@@ -54,5 +54,6 @@ class HighScore{
 	HighScore(int point,String day){
 		this.point=point;
 		this.day=day;
+		this.day=day;
 	}
 }
