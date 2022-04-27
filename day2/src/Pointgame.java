@@ -20,6 +20,7 @@ public class Pointgame {
 		br.close();
 		Random rmd = new Random();
 		Scanner sc = new Scanner(System.in);
+
 		System.out.println("****乱数ゲーム****");                      //ゲーム開始
 		System.out.printf("HighScore %d %s%n",scores.point,scores.day);
 		while(true) {
@@ -32,7 +33,7 @@ public class Pointgame {
 			if(act.equals("d")) {
 				System.out.println("スコアを初期化します");           //おまけスコア初期化
 				scores.point = 0;
-				scores.day  = "";
+				scores.day  = " ";
 				FileWrite(scores);
 			}
 			if(act.equals("y")) {
