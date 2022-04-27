@@ -1,8 +1,10 @@
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
 public class TimeLesson {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParseException {
 		long start = System.currentTimeMillis();
 		String str ="java";
 		for(int i=0;i<10000;i++) {
@@ -36,7 +38,15 @@ public class TimeLesson {
 		int y = c.get(Calendar.YEAR);
 		System.out.println("今年は"+y+"年です");
 		System.out.println("Hello");
-
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		Date dd =sdf.parse("2022/04/27 12:55:00");
+		System.out.println(dd);
+		
+		sdf=new SimpleDateFormat("yy年MM月dd日(E)");    //Eは曜日をだしてくれる
+		String msg = sdf.format(dd);                    //Date型以外も渡せるかもしれないが・・・
+		System.out.println(msg);
+		
+		
 	}
-
 }
